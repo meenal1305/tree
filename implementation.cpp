@@ -30,9 +30,9 @@ void traverse1(node*root)
     {
         return;
     }
-    traverse(root->left);
+    traverse1(root->left);
      cout<<root->data<<" ";
-    traverse(root->right);
+    traverse1(root->right);
     
     
 }
@@ -42,8 +42,8 @@ void traverse2(node*root)
     {
         return;
     }
-    traverse(root->left);
-    traverse(root->right);
+    traverse2(root->left);
+    traverse2(root->right);
     cout<<root->data<<" ";  
 }
 int main() {
